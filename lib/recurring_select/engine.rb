@@ -6,6 +6,7 @@ module RecurringSelect
       ActionView::Helpers::FormHelper.send(:include, RecurringSelectHelper::FormHelper)
       ActionView::Helpers::FormOptionsHelper.send(:include, RecurringSelectHelper::FormOptionsHelper)
       ActionView::Helpers::FormBuilder.send(:include, RecurringSelectHelper::FormBuilder)
+      ActionView::Base.send(:include, RecurringSelectHelper::FormHelper)
     end
     
     initializer "recurring_select.connecting_middleware" do |app|
