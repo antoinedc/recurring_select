@@ -1,6 +1,6 @@
 en:
   recurring_select:
-    not_recurring: "Once"
+    not_recurring: "None"
     every_week: "Every week"
     every_month: "Every month"
     change_schedule: "Change schedule..."

@@ -34,8 +34,8 @@ module RecurringSelectHelper
       if default_schedules.blank?
         if currently_selected_rule.present?
           options_array << blank_option if options[:allow_blank]
-          options_array << I18n.t("recurring_select.every_week")
-          options_array << I18n.t("recurring_select.every_month")
+          options_array << [I18n.t("recurring_select.every_week"), 'week']
+          options_array << [I18n.t("recurring_select.every_month"), 'month']
           options_array << ice_cube_rule_to_option(currently_selected_rule)
           options_array << separator
           options_array << [I18n.t("recurring_select.change_schedule"), "custom"]
